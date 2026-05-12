@@ -1,26 +1,57 @@
-import React from 'react';
 import {
   SecondContainer,
   Title,
   Subtitle,
   CardContainer,
+  Title2,
+  SubtitleEspecial,
 } from './ProjectsStyled';
 import CardEach from '../../components/card/CardEach';
-
 import { Proyectos } from '../../data/Proyectos';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 
 const Projects = () => {
   const data = Proyectos;
+
   return (
-    <SecondContainer id="proyectos" >
-      <Title >Mis proyectos</Title>
+    <SecondContainer id="proyectos">
+      <Title2>Servicios</Title2>
       <Subtitle>
-        Estos son algunos de los proyectos que he estado realizando
+        Una selección de trabajos donde el diseño y la tecnología se encuentran.
+        Transformamos ideas en experiencias digitales que se sientan <SubtitleEspecial>simples, modernas y atractivas.</SubtitleEspecial>
       </Subtitle>
       <CardContainer>
-        {data && data.map((Proyectos)=>(
-        <CardEach key={Proyectos.id} {...Proyectos}/>
-        ))}
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          speed={1000}
+          autoplay={{ delay: 3500 }} // Cambia cada 3 segundos
+          spaceBetween={25} // Espacio entre cards
+          slidesPerView={1} // Cuántas se ven a la vez
+          pagination={{ clickable: true }}
+          style={{
+            width: '100%',
+            maxWidth: '1200px', // Un poco más grande que la card para que las flechas tengan aire
+            margin: '0 auto',
+          }}
+          centeredSlides={true}
+          /*           breakpoints={{
+            Cuando la pantalla es grande, mostramos más
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }} */
+        >
+          {data &&
+            data.map((proyecto) => (
+              <SwiperSlide key={proyecto.id}>
+                <CardEach {...proyecto} />
+              </SwiperSlide>
+            ))}
+        </Swiper>
       </CardContainer>
     </SecondContainer>
   );

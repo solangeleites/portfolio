@@ -1,54 +1,57 @@
-import React from 'react'
-import { HomeContainer, Image, Paragraph, Title, BtnDown, Container, ContainerRow, Subtitle, SecondContainer, CardContainer, Card, Name, ParagraphAboutMe } from './HomeStyled'
+import React from 'react';
+import {
+  HomeContainer,
+  Image,
+  Paragraph,
+  Title,
+  BtnDown,
+  Container,
+  ContainerRow,
+  Subtitle,
+  SecondContainer,
+  CardContainer,
+  Card,
+  Name,
+  ParagraphAboutMe,
+  BtnDownContacto,
+} from './HomeStyled';
 import { Link as ScrollLink } from 'react-scroll';
 import Projects from '../projects/Projects';
 import Contact from '../contact/Contact';
-import Skills from '../skills/Skills';
 import Footer from '../footer/Footer';
-import TypeWriter from 'typewriter-effect'
-
+import TypeWriter from 'typewriter-effect';
 
 const Home = () => {
-      
   return (
     <>
-    <HomeContainer id='about' >
-<ContainerRow>
-      <Container >
-            <Paragraph>Hola! Mi nombre es </Paragraph>
-            <Name>Solange Leites Galván</Name>
-<div style={{color:'black', fontWeight:'800', fontSize:'25px'}}>
-<TypeWriter 
-      options={{
-            strings:[
-                  'Full Stack Developer',
-                  'Front End Developer',
-                  'Back End Developer',
-            ],
-            autoStart: true,
-            loop: true,
-      }}
-/>
-</div>
-
-  <ParagraphAboutMe>Desde que descubrí este mundo me enfoco constantemente en aprender, buscando crecer profesionalmente, amoldándome a un entorno en constante evolución.</ParagraphAboutMe>
-  <ParagraphAboutMe>Aspiro a generar una diferencia tangible en todos los proyectos que participe, optimizando cada línea de código, desarrollando con coherencia y armonía, logrando así el resultado que mejor se adapte a las necesidades de cada cliente.</ParagraphAboutMe>
-
-  <BtnDown href="https://drive.google.com/file/d/1UANRmx6pIJzrJ7qTLep9EJ800nV3ELm6/view?usp=sharing" alt="Solange_Leites_Galván_CV" target='_blank'>Descargar mi CV</BtnDown>
-</Container>
-
-      <Container>
-          <Image src="https://blush.design/api/download?shareUri=HeUTuvAqVcA8P2jI&c=Skin_0%7Effdbb4&w=800&h=800&fm=png" />
-      </Container>
-</ContainerRow>
-
+      <HomeContainer id="Inicio">
+        <Container>
+          <Name>
+            Desarrollo páginas web modernas que convierten visitantes en
+            clientes.
+          </Name>
+          <ParagraphAboutMe>
+            Creamos sitios web con estilo para que tu marca destaque y tus
+            clientes encuentren exactamente lo que buscan, sin vueltas.
+          </ParagraphAboutMe>
+          <ContainerRow>
+            <BtnDown href="#proyectos" alt="Servicios">
+              Servicios
+            </BtnDown>
+            <BtnDownContacto
+              href="https://wa.me/5491162182330?text=Hola%20UPage!%20Quiero%20más%20info"
+              alt="Chatear con UPage!"
+              target="_blank">
+              Contactanos
+            </BtnDownContacto>
+          </ContainerRow>
+        </Container>
       </HomeContainer>
-<Skills />
-<Projects />
-<Contact />
-<Footer />
-      </>
-  )
-}
+      <Projects />
+      <Contact />
+      <Footer />
+    </>
+  );
+};
 
-export default Home
+export default Home;

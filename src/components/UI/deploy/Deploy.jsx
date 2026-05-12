@@ -8,9 +8,10 @@ const Deploy = ({ href }) => {
           height: '35px',
           width: '35px',
           padding: '5px',
-          border: '1px solid var(--oliva)',
+          border: '1px solid white',
           borderRadius: '10px',
           cursor: 'pointer',
+          backgroundColor: 'white',
         }}
       />
     </a>

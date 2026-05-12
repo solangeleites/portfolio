@@ -6,7 +6,11 @@ export const SecondContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  height: 90vh;
+  background-image: url('/src/assets/noisy-texture-200x200-o10-d13-c-f3eee7-t0.png');
+  background-size: auto;
+  background-position: center;
+
   ${mobile} {
     align-items: center;
   }
@@ -23,40 +27,56 @@ export const SecondContainerSkills = styled.div`
     gap: 0px;
   }
 `;
-export const Title = styled.h2`
-     font-weight: bold;
-    font-size: 25px;
-  font-family: 'Raleway', sans-serif;
-
+export const Title = styled.p`
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  text-shadow: -1px 3px 5px rgba(67, 67, 67, 0.83);
   ${mobile} {
     font-size: 18px;
-    font-weight: 600;
   }
 `;
-export const Subtitle = styled.h4`
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
+
+export const Title2 = styled.p`
+  font-size: 32px;
+  font-weight: 900;
+  font-family: 'Space Grotesk', sans-serif;
   ${mobile} {
-    font-size: 16px;
-    font-weight: 500;
-    width: 325px;
+    font-size: 18px;
   }
 `;
+export const Subtitle = styled.p`
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  width: 800px;
+  font-size: 22px;
+  text-align: center;
+  ${mobile} {
+    font-size: 14px;
+  }
+`;
+export const SubtitleEspecial = styled.p`
+color:#2a3d75;
+`;
+
 export const Paragraph = styled.p`
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: white;
+  width: 550px;
 
   ${mobile} {
-    font-size: 16px;
-    font-weight: 500;
-    width: 325px;
+    font-size: 14px;
+    width: 90%;
+    text-align: center;
   }
 `;
 
 export const ContainerButtons = styled.div`
   display: flex;
   gap: 25px;
-
+  border: 2px solid orange;
   ${mobile} {
     justify-content: space-evenly;
   }
@@ -65,79 +85,75 @@ export const ContainerButtons = styled.div`
 export const Button = styled.button`
   height: 40px;
   padding: 0 25px;
-  border-radius: 10px;
-  background-color: var(--oliva);
-  font-weight: 500;
+  border-radius: 5px;
+  background-color: pink;
   text-align: center;
   border: none;
   margin-top: 20px;
-
   a {
     text-decoration: none;
     list-style: none;
     background-color: var(--oliva);
     color: var(--beige);
-    font-family: 'Raleway', sans-serif;
   }
 `;
 
 export const CardContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 25px;
-  width: 90%;
-  ${mobile} {
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    padding: 0;
-  } 
+  width: 100%;
+  padding: 40px 0;
+  overflow: hidden;
 `;
 export const CardContainer2 = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: start;
-  flex-wrap: wrap;
-  gap: 25px;
+  gap: 12px;
+  flex: 1;
+  padding: 20px;
 
   ${mobile} {
     align-items: center;
+    width: 100%;
+    padding: 10px;
   }
 `;
 export const Card = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 325px;
-  width: 1300px;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid var(--oliva);
-  transition: transform 1s ease;
-
+  width: 100%;
+  max-width: 1100px;
+  min-height: 450px;
+  padding: 24px;
+  box-sizing: border-box;
+  background: #2a3d74;
+  color: white;
+  border-radius: 999px;
+  padding: 18px 36px;
+  font-weight: 500;
+  transition: 0.3s ease;
   &:hover {
-    transform: scale(1.01);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(42, 61, 116, 0.2);
   }
   ${mobile} {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 650px;
-    width: 350px;
-    padding:0px;
+    max-width: 320px;
+    margin: 0 auto;
+    min-height: auto;
   }
+`;
+
+export const ImageCard = styled.img`
+  height: 400px;
+  border-radius: 999px;
 `;
 
 export const ContainerButtonDeployAndGithub = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: 25px;
-  width: 100%;
-
+  gap: 50px;
   ${mobile} {
     justify-content: center;
     align-items: center;
@@ -146,17 +162,13 @@ export const ContainerButtonDeployAndGithub = styled.div`
 `;
 export const ContainerRolAndDuration = styled.div`
   display: flex;
-  width: 350px;
+  width: 100%;
   justify-content: space-between;
+  gap: 10px;
 
   ${mobile} {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 20%;
-    padding: 0;
-    margin: 0;
-    gap:0px;
+    gap: 5px;
   }
 `;

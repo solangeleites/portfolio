@@ -10,14 +10,13 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         margin: 0px;
         padding: 0px;
-        font-family: 'Playfair Display', serif;
-        font-family: 'Quicksand', sans-serif;
-        font-family: 'Raleway', sans-serif;
-
-        background-color: var(--beige);
-        color: var(--verde);
         scroll-behavior: smooth;
+        list-style: none;
+        text-decoration: none;        
+        color:#0B0101;
     }
     html {
           scroll-behavior: smooth;
+          letter-spacing: -0.5px;
+          scroll-padding-top: 100px
     }`;

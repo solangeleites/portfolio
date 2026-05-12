@@ -3,16 +3,22 @@ import styled from 'styled-components';
 import { tablet, mobile } from '../../queries/mediaQueries';
 
 export const NavbarContainer = styled.nav`
-  height: 82px;
+  /* Estructura original del Navbar */
+  height: 80px;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
-  z-index: 1;
-  box-shadow: 0px 1px 50px grey;
-  
+  top:0;
+  z-index: 100;
+  padding: 0 50px;
+  border-bottom: 1px solid grey;
+  background-image:url("/src/assets/noisy-texture-200x200-o10-d13-c-f3eee7-t0.png");
+   background-size:contain ;
+  background-position: center;
 `;
+
 export const Logo = styled.img`
   cursor: pointer;
   height: 80px;
@@ -26,21 +32,21 @@ export const LinkContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 500px;
+  top: 80px;
+  right: 0;
 
-  ${mobile}{
-    ${tablet} {
-      flex-direction: column;
-    position: absolute;
-    width: 100%;
-    top: 80px;
-    right: 0;
-    border: 1px solid var(--oliva);
-    border-top: none;
-    height: calc(100vw - 60px);
-    z-index: 5;
-    transition: all 0.5s ease-in-out;
-    transform: ${(props) =>
-      props.isOpen ? 'translateX(0%)' : 'translateX(200%)'};
-  }
-}`;
+  flex-direction: column;
+  width:100%;
+  background: white;
+
+  border-left: 1px solid var(--oliva);
+  border-bottom: 1px solid var(--oliva);
+
+  height: calc(100vh - 60px);
+  z-index: 5;
+
+  transition: all 1s ease-in-out;
+
+  transform: ${(props) =>
+    props.isOpen ? "translateX(0%)" : "translateX(120%)"};
+`;

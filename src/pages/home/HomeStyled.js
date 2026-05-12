@@ -1,20 +1,21 @@
 import styled from 'styled-components';
 import { mobile } from '../../queries/mediaQueries';
 
-
 export const HomeContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
-
+  height: 100vh;
+  background-image: url('/src/assets/noisy-texture-200x200-o10-d13-c-f3eee7-t0.png');
+  background-size: auto;
+  background-position: center;
 `;
 export const ContainerRow = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
+  gap: 50px;
   ${mobile} {
     flex-direction: column;
     justify-content: center;
@@ -26,82 +27,87 @@ export const ContainerRow = styled.div`
 export const Image = styled.img`
   height: 350px;
   ${mobile} {
-   display: none;
+    display: none;
   }
 `;
 
-export const Title = styled.h2`
-  font-weight: bold;
-  font-family: 'Raleway', sans-serif;
-`;
-export const Subtitle = styled.h4`
-  font-family: 'Raleway', sans-serif;
-`;
+export const Title = styled.h2``;
+export const Subtitle = styled.h4``;
 export const Paragraph = styled.p`
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
   font-size: 20px;
-  
 `;
+
 export const Name = styled.h1`
-font-family: 'Poppins', sans-serif;
-font-weight: 900;
-font-size: 40px;
-color: var(--oliva);
-${mobile} {
-  font-size: 30px;
-  font-weight: 900;
-}
+  font-size: 80px;
+  font-family: 'Anton', sans-serif;
+  font-weight: 500;
+  width: 1300px;
+  ${mobile} {
+    font-size: 30px;
+  }
 `;
 
 export const ParagraphAboutMe = styled.p`
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 24px;
   width: 700px;
-  ${mobile} {
+  font-family:
+    'Inter',
+    sans-serif ${mobile} {
     font-size: 16px;
-    font-weight: 500;
     width: 325px;
-  }
-`
-
-
-export const BtnDown = styled.a`
-  padding: 15px 20px;
-  width: 200px;
-  border-radius: 10px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-  text-align: center;
-  border: 1px solid var(--verde);
-
-  list-style: none;
-  text-decoration: none;
-  transition: 0.5s ease-in-out;
-  margin: 0 auto;
-
-  &:hover {
-    background-color: var(--verde);
-    color: var(--beige);
   }
 `;
 
-export const Container = styled.div`
+export const BtnDown = styled.a`
+  padding: 18px 40px;
+  width: 200px;
+  border-radius: 999px;
+  text-align: center;
+  transition: 0.3s ease-in;
+  margin: 0 auto;
+  border: 3px solid #2a3d74;
+      font-family:
+    'Inter',
+    sans-serif;
+  &:hover {
+    background: #2a3d74;
+    color: white;
+    transform: translateY(-2px);
+    transition: 0.3s ease;
+  }
+`;
+export const BtnDownContacto = styled.a`
+  padding: 18px 40px;
+  width: 200px;
+  border-radius: 999px;
+  text-align: center;
+  transition: 0.3s ease-in;
+  margin: 0 auto;
+    background: #2a3d74;
+    border: 3xp solid #2a3d74;
+    color: white;
+    font-family:
+    'Inter',
+    sans-serif;
+  &:hover {
+    transform: translateY(-2px);
+    transition: 0.3s ease;
+  }
+`;
+
+export const Container = styled.main`
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  height: 350px;
   width: 700px;
-  gap: 20px;
+  gap:25px;
 
   ${mobile} {
     padding: 0 20px;
     width: 370px;
   }
-
 `;
 export const SecondContainer = styled.div`
   display: flex;
@@ -139,8 +145,7 @@ export const Button = styled.button`
   padding: 0 20px;
   border-radius: 10px;
   background-color: var(--oliva);
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+
   text-align: center;
   border: none;
   margin-top: 20px;
@@ -150,6 +155,5 @@ export const Button = styled.button`
     list-style: none;
     background-color: var(--oliva);
     color: var(--beige);
-    font-family: 'Raleway', sans-serif;
   }
 `;

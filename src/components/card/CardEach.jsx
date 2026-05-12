@@ -7,8 +7,8 @@ import {
   Paragraph,
   ContainerButtonDeployAndGithub,
   ContainerRolAndDuration,
+  ImageCard,
 } from '../../pages/projects/ProjectsStyled';
-import Github from '../UI/github/Github';
 import Deploy from '../UI/deploy/Deploy';
 
 const CardEach = ({
@@ -23,29 +23,17 @@ const CardEach = ({
   duration,
 }) => {
   return (
-    <Card style={{ boxShadow: '0px 0px 5px 0px #e4e0c8', border: 'none' }}>
-      <img src={img} alt={title} style={{ height: '300px' }} />
+    <Card>
+      <ImageCard src={img} alt={title} />
       <CardContainer2>
-        <ContainerButtonDeployAndGithub
-        >
+        <ContainerButtonDeployAndGithub>
           <Title>{title}</Title>
-          <div style={{display:'flex', gap:'50px'}}>
-            <Github href={github} />
-            <Deploy href={deploy} />
-          </div>
+          <Deploy href={deploy} />
         </ContainerButtonDeployAndGithub>
-        <Subtitle>Tecnologias: {tech}</Subtitle>
         <Paragraph>{paragraph}</Paragraph>
+        <Paragraph>{tech}</Paragraph>
         <ContainerRolAndDuration>
-          <div >
-            <Subtitle>Rol:</Subtitle>
-            <Paragraph>{rol}</Paragraph>
-          </div>
-
-          <div>
-            <Subtitle>Duración:</Subtitle>
-            <Paragraph>{duration}</Paragraph>
-          </div>
+          <Paragraph>{rol}</Paragraph>
         </ContainerRolAndDuration>
       </CardContainer2>
     </Card>

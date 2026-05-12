@@ -9,12 +9,13 @@ export const LinkItemStyled = styled(ScrollLink)`
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
-  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  
+  
+  cursor: pointer;
 
   &.active {
-    font-weight: 700;
+    
     color: var(--verde);
   }
 

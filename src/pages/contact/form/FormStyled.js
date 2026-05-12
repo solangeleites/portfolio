@@ -6,13 +6,11 @@ export const FormContainer = styled.form`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  width: 100%;
+  padding: 80px;
+  width: 650px;
   height: 100%;
-  background-color: var(--beige);
-  color: var(--verde);
-  border-radius: 20px;
-
+  border: 3px solid #2a3d75;
+  border-radius:50px;
   ${mobile} {
     width: 350px;
     padding: 0px;
@@ -22,11 +20,13 @@ export const FormContainer = styled.form`
 export const Input = styled.input`
   border: none;
   outline: none;
-  border-bottom: 1px solid var(--verde);
-  font-family: 'Raleway', sans-serif;
+  border-bottom: 3px solid #2a3d75;
   height: 30px;
-  width: 350px;
-
+  width: 550px;
+  font-family: 'Inter', sans-serif;
+  font-weight:400;
+  font-size:20px;
+  background: none;
   ${mobile} {
     width: 220px;
   }
@@ -35,10 +35,14 @@ export const Input = styled.input`
 export const TextArea = styled.textarea`
   border: none;
   outline: none;
-  border-bottom: 1px solid var(--verde);
-  font-family: 'Raleway', sans-serif;
+  border-bottom: 3px solid #2a3d75;
   height: 90px;
-  width: 350px;
+  width: 550px;
+  font-family: 'Inter', sans-serif;
+  font-weight:400;
+  font-size:20px;
+  background: none;
+
 
   ${mobile} {
     width: 220px;
@@ -49,15 +53,19 @@ export const Button = styled.input`
   border-radius: 10px;
   border: none;
   outline: none;
-  background-color: var(--oliva);
-  color: var(--beige);
-  height: 40px;
+  height: 50px;
   width: 350px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Inter', sans-serif;
+    font-weight:500;
+  font-size:16px;
+      background-color:#2a3d75;
+color: white;
+  
   cursor: pointer;
-  transition: 0.5s ease-in-out;
+  transition: 0.5s ease;
     &:hover {
-    background-color: var(--verde);
+    background-color:#2a3d75;
+    color: white;
   }
   ${mobile} {
     width: 220px;

@@ -4,7 +4,7 @@ import {Container, Text} from './FooterStyled'
 const Footer = () => {
   return (
     <Container >
-        <Text>© 2023 Solange Leites Galván, Inc. All rights reserved.</Text>
+        <Text>© 2023 U page. All rights reserved.</Text>
 
     </Container>
   )

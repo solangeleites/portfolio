@@ -2,38 +2,18 @@ import React from 'react';
 import { ContainerRow, Container, Title, Paragraph } from './ContactStyled';
 
 import Form from './form/Form';
-import Email from '../../components/UI/email/Email';
-import Linkedin from '../../components/UI/linkedin/Linkedin';
-import Github from '../../components/UI/github/Github';
+import { Subtitle, Title2 } from '../projects/ProjectsStyled';
+
 
 const Contact = () => {
   return (
-    <Container id="contact">
-      <ContainerRow style={{ boxShadow: '0px 0px 5px 0px #e4e0c8', alignItems:'start'}}>
-        <Title>Redes</Title>
-        <Paragraph>
-          {' '}
-          <Github />
-          <a href="github.com/solangeleites">github.com/solangeleites</a>
-        </Paragraph>
-        <Paragraph>
-          {' '}
-          <Linkedin />
-          <a href="https://www.linkedin.com/in/solangeleitesgalvan/">
-            linkedin.com/in/solangeleitesgalvan/
-          </a>
-        </Paragraph>
-        <Paragraph>
-          {' '}
-          <Email />
-          <a href="mailto:solangeleitesg@gmail.com">
-            solangeleitesg@gmail.com{' '}
-          </a>
-        </Paragraph>
-      </ContainerRow>
+    <Container id="contacto">
 
-      <ContainerRow style={{ boxShadow: '0px 0px 5px 0px #e4e0c8' }}>
-         <Title>Contactame</Title>
+      <ContainerRow >
+         <Title2>Hablemos!</Title2>
+        <Subtitle>
+          Podes pedir cotización, hacer consultas o simplemente saludar. Estamos para ayudarte a llevar tu presencia online al siguiente nivel.
+          </Subtitle>
         <Form />
       </ContainerRow>
     </Container>
