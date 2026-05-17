@@ -7,14 +7,17 @@ export const FormContainer = styled.form`
   align-items: center;
   justify-content: center;
   padding: 80px;
-  width: 650px;
+  width: 615px;
   height: 100%;
   border: 3px solid #2a3d75;
   border-radius:50px;
+  gap: 20px;
+
   ${mobile} {
     width: 350px;
     padding: 0px;
   }
+  
 `;
 
 export const Input = styled.input`
@@ -22,14 +25,23 @@ export const Input = styled.input`
   outline: none;
   border-bottom: 3px solid #2a3d75;
   height: 30px;
-  width: 550px;
+  width: 500px;
   font-family: 'Inter', sans-serif;
   font-weight:400;
   font-size:20px;
   background: none;
+
+
+  
   ${mobile} {
     width: 220px;
   }
+  &::placeholder {
+  font-weight: 400;
+  font-size: 19px;
+  width: 570px;
+    }
+
 `;
 
 export const TextArea = styled.textarea`
@@ -37,12 +49,15 @@ export const TextArea = styled.textarea`
   outline: none;
   border-bottom: 3px solid #2a3d75;
   height: 90px;
-  width: 550px;
+  width: 500px;
   font-family: 'Inter', sans-serif;
   font-weight:400;
   font-size:20px;
   background: none;
-
+  &::placeholder {
+  font-weight: 400;
+  font-size: 19px;
+  }
 
   ${mobile} {
     width: 220px;
@@ -64,10 +79,16 @@ color: white;
   cursor: pointer;
   transition: 0.5s ease;
     &:hover {
-    background-color:#2a3d75;
-    color: white;
+    transform: translateY(-5px);
+    transition: 0.3s ease;
   }
   ${mobile} {
     width: 220px;
   }
+`;
+export const MsgEnviado = styled.p`
+font-size: 20px;
+font-weight:500;
+color:#2a3d75;
+width:370px;
 `;

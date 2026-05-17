@@ -31,6 +31,19 @@ export const ContainerRow = styled.div`
   }
 `;
 export const Title = styled.h2``;
+
+export const Subtitle = styled.p`
+text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  font-family:
+    'Inter',
+    sans-serif ${mobile} {
+    font-size: 14px;
+  }
+`
+
+;
 export const Paragraph = styled.p`
   text-align: start;
   a {

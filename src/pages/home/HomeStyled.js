@@ -67,9 +67,7 @@ export const BtnDown = styled.a`
   transition: 0.3s ease-in;
   margin: 0 auto;
   border: 3px solid #2a3d74;
-      font-family:
-    'Inter',
-    sans-serif;
+  font-family: 'Inter', sans-serif;
   &:hover {
     background: #2a3d74;
     color: white;
@@ -84,14 +82,12 @@ export const BtnDownContacto = styled.a`
   text-align: center;
   transition: 0.3s ease-in;
   margin: 0 auto;
-    background: #2a3d74;
-    border: 3xp solid #2a3d74;
-    color: white;
-    font-family:
-    'Inter',
-    sans-serif;
+  background: #2a3d74;
+  border: 3xp solid #2a3d74;
+  color: white;
+  font-family: 'Inter', sans-serif;
   &:hover {
-    transform: translateY(-2px);
+    transform: translateY(-5px);
     transition: 0.3s ease;
   }
 `;
@@ -102,7 +98,7 @@ export const Container = styled.main`
   align-items: center;
   text-align: center;
   width: 700px;
-  gap:25px;
+  gap: 25px;
 
   ${mobile} {
     padding: 0 20px;

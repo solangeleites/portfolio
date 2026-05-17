@@ -47,24 +47,29 @@ export const Title2 = styled.p`
   }
 `;
 export const Subtitle = styled.p`
-  font-weight: 700;
-  font-family: 'Inter', sans-serif;
-  width: 800px;
-  font-size: 22px;
   text-align: center;
-  ${mobile} {
+  font-weight: 400;
+  font-size: 22px;
+  width: 650px;
+  font-family:
+    'Inter',
+    sans-serif ${mobile} {
     font-size: 14px;
   }
 `;
 export const SubtitleEspecial = styled.p`
-color:#2a3d75;
+  color: #2a3d75;
 `;
 
 export const Paragraph = styled.p`
-  font-family: 'Inter', sans-serif;
-  font-size: 18px;
-  color: white;
-  width: 550px;
+color: white;
+  font-weight: 400;
+  font-size: 19px;
+  font-family:
+    'Inter',
+    sans-serif ${mobile} {
+    font-size: 14px;
+  }
 
   ${mobile} {
     font-size: 14px;
