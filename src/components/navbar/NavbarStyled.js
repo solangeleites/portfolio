@@ -10,12 +10,12 @@ export const NavbarContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  top:0;
+  top: 0;
   z-index: 100;
   padding: 0 50px;
   border-bottom: 1px solid grey;
-  background-image:url("/src/assets/noisy-texture-200x200-o10-d13-c-f3eee7-t0.png");
-   background-size:contain ;
+  background-image: url('https://res.cloudinary.com/dgyubvlec/image/upload/v1779151199/noisy-texture-200x200-o10-d13-c-f3eee7-t0_nnprzd.png');
+  background-size: contain;
   background-position: center;
 `;
 
@@ -36,7 +36,7 @@ export const LinkContainer = styled.div`
   right: 0;
 
   flex-direction: column;
-  width:100%;
+  width: 100%;
   background: white;
 
   border-left: 1px solid var(--oliva);
@@ -48,5 +48,5 @@ export const LinkContainer = styled.div`
   transition: all 1s ease-in-out;
 
   transform: ${(props) =>
-    props.isOpen ? "translateX(0%)" : "translateX(120%)"};
+    props.isOpen ? 'translateX(0%)' : 'translateX(120%)'};
 `;

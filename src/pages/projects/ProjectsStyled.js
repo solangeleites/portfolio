@@ -7,7 +7,7 @@ export const SecondContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 90vh;
-  background-image: url('/src/assets/noisy-texture-200x200-o10-d13-c-f3eee7-t0.png');
+  background-image: url('https://res.cloudinary.com/dgyubvlec/image/upload/v1779151199/noisy-texture-200x200-o10-d13-c-f3eee7-t0_nnprzd.png');
   background-size: auto;
   background-position: center;
 

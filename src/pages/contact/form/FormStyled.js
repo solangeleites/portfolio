@@ -40,6 +40,7 @@ export const Input = styled.input`
   font-weight: 400;
   font-size: 19px;
   width: 570px;
+  font-family: 'Times New Roman', Times, serif
     }
 
 `;
@@ -55,8 +56,9 @@ export const TextArea = styled.textarea`
   font-size:20px;
   background: none;
   &::placeholder {
-  font-weight: 400;
   font-size: 19px;
+  font-family: 'Times New Roman', Times, serif
+
   }
 
   ${mobile} {
