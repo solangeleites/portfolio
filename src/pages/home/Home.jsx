@@ -42,7 +42,7 @@ const Home = () => {
               href="https://wa.me/5491162182330?text=Hola%20UPage!%20Quiero%20más%20info"
               alt="Chatear con UPage!"
               target="_blank">
-              Contactanos
+              Contáctanos
             </BtnDownContacto>
           </ContainerRow>
         </Container>

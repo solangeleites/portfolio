@@ -38,7 +38,8 @@ text-align: center;
   font-size: 22px;
   font-family:
     'Inter',
-    sans-serif ${mobile} {
+    sans-serif; 
+    ${mobile} {
     font-size: 14px;
   }
 `

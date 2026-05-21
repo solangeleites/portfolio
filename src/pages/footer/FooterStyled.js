@@ -16,9 +16,10 @@ export const Container = styled.div`
 `
 
 export const Text = styled.p`
-    font-family:'Roboto', sans-serif;
     font-size: 14px;
     color: grey;
     line-height: 1.5;
+      font-family: 'Inter', sans-serif;
+
 
 `

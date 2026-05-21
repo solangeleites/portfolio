@@ -50,24 +50,23 @@ export const Subtitle = styled.p`
   text-align: center;
   font-weight: 400;
   font-size: 22px;
-  width: 650px;
-  font-family:
-    'Inter',
-    sans-serif ${mobile} {
+  width:950px;
+  font-family: 'Inter', sans-serif;
+  ${mobile} {
     font-size: 14px;
   }
 `;
 export const SubtitleEspecial = styled.p`
   color: #2a3d75;
+  font-weight: 600;
 `;
 
 export const Paragraph = styled.p`
-color: white;
+  color: white;
   font-weight: 400;
   font-size: 19px;
-  font-family:
-    'Inter',
-    sans-serif ${mobile} {
+  font-family: 'Inter', sans-serif;
+  ${mobile} {
     font-size: 14px;
   }
 

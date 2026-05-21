@@ -48,12 +48,11 @@ export const Name = styled.h1`
 `;
 
 export const ParagraphAboutMe = styled.p`
-  font-weight: 400;
+  font-weight: 500;
   font-size: 24px;
-  width: 700px;
-  font-family:
-    'Inter',
-    sans-serif ${mobile} {
+  width: 750px;
+ font-family: 'Inter', sans-serif;
+  ${mobile} {
     font-size: 16px;
     width: 325px;
   }
@@ -68,6 +67,7 @@ export const BtnDown = styled.a`
   margin: 0 auto;
   border: 3px solid #2a3d74;
   font-family: 'Inter', sans-serif;
+  font-weight:500;
   &:hover {
     background: #2a3d74;
     color: white;
@@ -86,6 +86,8 @@ export const BtnDownContacto = styled.a`
   border: 3xp solid #2a3d74;
   color: white;
   font-family: 'Inter', sans-serif;
+    font-weight:500;
+
   &:hover {
     transform: translateY(-5px);
     transition: 0.3s ease;
