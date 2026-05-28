@@ -10,9 +10,9 @@ export const MenuHamburger = styled.div`
   justify-content: center;
   z-index: 10;
   display: none; 
-  ${tablet} {
+  ${mobile} {
     position: absolute;
-    right: 90px;
+    right: 25px;
     display: flex;
   }
 `;

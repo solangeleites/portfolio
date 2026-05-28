@@ -9,6 +9,7 @@ export const Container = styled.div`
   background-image: url('/src/assets/noisy-texture-200x200-o10-d13-c-f3eee7-t0.png');
   background-size: auto;
   background-position: center;
+  height: 90vh;
   ${mobile} {
     flex-direction: column;
     justify-content: center;
@@ -25,10 +26,6 @@ export const ContainerRow = styled.div`
   gap: 25px;
   padding: 10px;
   text-align: center;
-
-  ${mobile} {
-    width: 80%;
-  }
 `;
 export const Title = styled.h2``;
 export const Paragraph = styled.p`

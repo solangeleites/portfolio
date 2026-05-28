@@ -7,7 +7,7 @@ const Deploy = ({ href }) => {
         style={{
           height: '35px',
           width: '35px',
-          padding: '5px',
+          padding: '4px',
           border: '1px solid white',
           borderRadius: '10px',
           cursor: 'pointer',

@@ -10,10 +10,12 @@ export const FormContainer = styled.form`
   width: 650px;
   height: 100%;
   border: 3px solid #2a3d75;
-  border-radius:50px;
+  border-radius: 50px;
   ${mobile} {
-    width: 350px;
-    padding: 0px;
+    max-width: 350px;
+    padding: 15px;
+    min-height: 450px;
+    justify-content: space-around;
   }
 `;
 
@@ -24,11 +26,12 @@ export const Input = styled.input`
   height: 30px;
   width: 550px;
   font-family: 'Inter', sans-serif;
-  font-weight:400;
-  font-size:20px;
+  font-weight: 400;
+  font-size: 20px;
   background: none;
   ${mobile} {
-    width: 220px;
+    max-width: 260px;
+    font-size: 16px;
   }
 `;
 
@@ -39,13 +42,12 @@ export const TextArea = styled.textarea`
   height: 90px;
   width: 550px;
   font-family: 'Inter', sans-serif;
-  font-weight:400;
-  font-size:20px;
+  font-weight: 400;
+  font-size: 20px;
   background: none;
-
-
   ${mobile} {
-    width: 220px;
+    width: 260px;
+    font-size: 16px;
   }
 `;
 
@@ -54,20 +56,19 @@ export const Button = styled.input`
   border: none;
   outline: none;
   height: 50px;
-  width: 350px;
+  width: 30px;
   font-family: 'Inter', sans-serif;
-    font-weight:500;
-  font-size:16px;
-      background-color:#2a3d75;
-color: white;
-  
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #2a3d75;
+  color: white;
   cursor: pointer;
   transition: 0.5s ease;
-    &:hover {
-    background-color:#2a3d75;
+  &:hover {
+    background-color: #2a3d75;
     color: white;
   }
   ${mobile} {
-    width: 220px;
+    width: 280px;
   }
 `;

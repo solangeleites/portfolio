@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { tablet, mobile } from '../../queries/mediaQueries';
-import {Link as ScrollLink} from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 
 export const LinkItemStyled = styled(ScrollLink)`
   color: var(--verde);
@@ -10,17 +10,12 @@ export const LinkItemStyled = styled(ScrollLink)`
   justify-content: center;
   text-decoration: none;
   font-size: 50px;
-  
-  
+  font-family: 'Inter', sans-serif;
   cursor: pointer;
-
   &.active {
-    
     color: var(--verde);
   }
-
   position: relative;
-
   &::after {
     content: '';
     height: 1px;
@@ -30,14 +25,13 @@ export const LinkItemStyled = styled(ScrollLink)`
     bottom: -2px;
     left: 0;
     transform: scaleX(0);
-    transition: transform 0.3s ease;
+    transition: transform 5s ease;
   }
   &:focus::after,
   &:active::after {
-    transform-origin: bottom right;
+    transform-origin: bottom left;
     transform: scaleX(1);
   }
-
   ${mobile} {
     font-size: 14px;
   }

@@ -32,9 +32,6 @@ const CardEach = ({
         </ContainerButtonDeployAndGithub>
         <Paragraph>{paragraph}</Paragraph>
         <Paragraph>{tech}</Paragraph>
-        <ContainerRolAndDuration>
-          <Paragraph>{rol}</Paragraph>
-        </ContainerRolAndDuration>
       </CardContainer2>
     </Card>
   );
