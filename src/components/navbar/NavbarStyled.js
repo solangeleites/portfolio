@@ -2,15 +2,6 @@ import styled from 'styled-components';
 
 import { tablet, mobile } from '../../queries/mediaQueries';
 
-// export const NavbarContainer = styled.nav`
-//   /* Estructura original del Navbar */
-
-//   z-index: 100;
-//   padding: 0 50px;
-//   border-bottom: 1px solid grey;
-//
-// `;
-
 export const NavbarContainer = styled.nav`
   display: flex;
   justify-content: space-between;
@@ -33,7 +24,6 @@ export const Logo = styled.img`
   cursor: pointer;
   height: 80px;
   padding-top: 10px;
-
   ${mobile} {
     font-size: 18px;
     margin-left: 25px;
@@ -42,7 +32,7 @@ export const Logo = styled.img`
 export const LinkContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
   ${mobile} {
     flex-direction: column;
@@ -54,11 +44,10 @@ export const LinkContainer = styled.div`
     width: 100%;
     top: 79px;
     right: 0;
-    height: calc(100vw - 100px);
     z-index: 5;
-    transition: all 0.5s ease-in;
+    transition: all 1s ease-out;
     transform: ${(props) =>
-      props.isOpen ? 'translateX(0%)' : 'translateX(200%)'};
-    height: calc(100vh - 80px);
+      props.isOpen ? 'translateY(0%)' : 'translateY(-200%)'};
+    height: 350px;
   }
 `;

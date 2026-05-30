@@ -6,7 +6,7 @@ export const HomeContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100dvh;
   background-image: url('/src/assets/noisy-texture-200x200-o10-d13-c-f3eee7-t0.png');
   background-size: auto;
   background-position: center;
@@ -18,10 +18,7 @@ export const ContainerRow = styled.div`
   gap: 50px;
   ${mobile} {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    
+    gap: 25px;
   }
 `;
 
@@ -44,7 +41,7 @@ export const Name = styled.h1`
   font-weight: 500;
   ${mobile} {
     font-size: 30px;
-    }
+  }
 `;
 
 export const ParagraphAboutMe = styled.p`
@@ -100,9 +97,7 @@ export const Container = styled.main`
   gap: 25px;
   ${mobile} {
     width: 320px;
-    gap: 0px;
-    margin-top: 25px;
-
+    gap: 30px;
   }
 `;
 export const SecondContainer = styled.div`

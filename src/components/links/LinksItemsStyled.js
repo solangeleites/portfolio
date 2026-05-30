@@ -4,7 +4,7 @@ import { tablet, mobile } from '../../queries/mediaQueries';
 import { Link as ScrollLink } from 'react-scroll';
 
 export const LinkItemStyled = styled(ScrollLink)`
-  color: var(--verde);
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,14 +13,14 @@ export const LinkItemStyled = styled(ScrollLink)`
   font-family: 'Inter', sans-serif;
   cursor: pointer;
   &.active {
-    color: var(--verde);
+    color: #2a3d75;
   }
   position: relative;
   &::after {
     content: '';
     height: 1px;
     width: 100%;
-    background-color: var(--oliva);
+    background-color: #2a3d75;
     position: absolute;
     bottom: -2px;
     left: 0;
@@ -33,6 +33,11 @@ export const LinkItemStyled = styled(ScrollLink)`
     transform: scaleX(1);
   }
   ${mobile} {
-    font-size: 14px;
+    font-size: 18px;
+    font-weight:500;
+
+
+
+    
   }
 `;
