@@ -7,16 +7,23 @@ export const FormContainer = styled.form`
   align-items: center;
   justify-content: center;
   padding: 80px;
-  width: 650px;
+  width: 615px;
   height: 100%;
   border: 3px solid #2a3d75;
+<<<<<<< HEAD
   border-radius: 50px;
+=======
+  border-radius:50px;
+  gap: 20px;
+
+>>>>>>> fb783560e3d2fb83708a0ef900ac64821856d096
   ${mobile} {
     max-width: 350px;
     padding: 15px;
     min-height: 450px;
     justify-content: space-around;
   }
+  
 `;
 
 export const Input = styled.input`
@@ -24,15 +31,25 @@ export const Input = styled.input`
   outline: none;
   border-bottom: 3px solid #2a3d75;
   height: 30px;
-  width: 550px;
+  width: 500px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 20px;
   background: none;
+
+
+  
   ${mobile} {
     max-width: 260px;
     font-size: 16px;
   }
+  &::placeholder {
+  font-weight: 400;
+  font-size: 19px;
+  width: 570px;
+  font-family: 'Inter', sans-serif;
+    }
+
 `;
 
 export const TextArea = styled.textarea`
@@ -40,11 +57,18 @@ export const TextArea = styled.textarea`
   outline: none;
   border-bottom: 3px solid #2a3d75;
   height: 90px;
-  width: 550px;
+  width: 500px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 20px;
   background: none;
+<<<<<<< HEAD
+=======
+  &::placeholder {
+  font-size: 19px;
+  }
+
+>>>>>>> fb783560e3d2fb83708a0ef900ac64821856d096
   ${mobile} {
     width: 260px;
     font-size: 16px;
@@ -64,11 +88,23 @@ export const Button = styled.input`
   color: white;
   cursor: pointer;
   transition: 0.5s ease;
+<<<<<<< HEAD
   &:hover {
     background-color: #2a3d75;
     color: white;
+=======
+    &:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+>>>>>>> fb783560e3d2fb83708a0ef900ac64821856d096
   }
   ${mobile} {
     width: 280px;
   }
+`;
+export const MsgEnviado = styled.p`
+font-size: 20px;
+font-weight:500;
+color:#2a3d75;
+width:370px;
 `;

@@ -7,7 +7,7 @@ export const SecondContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 90vh;
-  background-image: url('/src/assets/noisy-texture-200x200-o10-d13-c-f3eee7-t0.png');
+  background-image: url('https://res.cloudinary.com/dgyubvlec/image/upload/v1779151199/noisy-texture-200x200-o10-d13-c-f3eee7-t0_nnprzd.png');
   background-size: auto;
   background-position: center;
   ${mobile} {
@@ -32,7 +32,6 @@ export const Title = styled.p`
   font-weight: 700;
   font-family: 'Inter', sans-serif;
   color: white;
-  text-shadow: -1px 3px 5px rgba(67, 67, 67, 0.83);
   ${mobile} {
     font-size: 18px;
     align-items: center;
@@ -49,27 +48,24 @@ export const Title2 = styled.p`
   }
 `;
 export const Subtitle = styled.p`
-  font-weight: 700;
-  font-family: 'Inter', sans-serif;
-  width: 800px;
-  font-size: 22px;
   text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  width: 950px;
+  font-family: 'Inter', sans-serif;
   ${mobile} {
     font-size: 14px;
     width: auto;
     margin: 0 15px;
-    font-weight:500;
+    font-weight: 500;
   }
 `;
 export const SubtitleEspecial = styled.p`
   color: #2a3d75;
-      font-weight:600;
-
+  font-weight: 600;
 `;
 
 export const Paragraph = styled.p`
-  font-family: 'Inter', sans-serif;
-  font-size: 18px;
   color: white;
   width: 550px;
   ${mobile} {

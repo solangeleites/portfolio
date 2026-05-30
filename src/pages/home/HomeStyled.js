@@ -45,7 +45,7 @@ export const Name = styled.h1`
 `;
 
 export const ParagraphAboutMe = styled.p`
-  font-weight: 400;
+  font-weight: 500;
   font-size: 24px;
   font-family: 'Inter', sans-serif;
   ${mobile} {
@@ -82,7 +82,7 @@ export const BtnDownContacto = styled.a`
   color: white;
   font-family: 'Inter', sans-serif;
   &:hover {
-    transform: translateY(-2px);
+    transform: translateY(-5px);
     transition: 0.3s ease;
   }
 `;

@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: space-around;
   align-items: baseline;
   padding: 50px 0;
-  background-image: url('/src/assets/noisy-texture-200x200-o10-d13-c-f3eee7-t0.png');
+  background-image: url('https://res.cloudinary.com/dgyubvlec/image/upload/v1779151199/noisy-texture-200x200-o10-d13-c-f3eee7-t0_nnprzd.png');
   background-size: auto;
   background-position: center;
   height: 90vh;
@@ -28,6 +28,20 @@ export const ContainerRow = styled.div`
   text-align: center;
 `;
 export const Title = styled.h2``;
+
+export const Subtitle = styled.p`
+text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  font-family:
+    'Inter',
+    sans-serif; 
+    ${mobile} {
+    font-size: 14px;
+  }
+`
+
+;
 export const Paragraph = styled.p`
   text-align: start;
   a {
