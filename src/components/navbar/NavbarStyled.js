@@ -44,7 +44,7 @@ export const LinkContainer = styled.div`
     width: 100%;
     top: 79px;
     right: 0;
-    z-index: 5;
+    z-index: 9999;
     transition: all 1s ease-out;
     transform: ${(props) =>
       props.isOpen ? 'translateY(0%)' : 'translateY(-200%)'};

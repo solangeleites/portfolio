@@ -14,9 +14,10 @@ export const GlobalStyles = createGlobalStyle`
         list-style: none;
         text-decoration: none;        
         color:#0B0101;
+
     }
     html {
           scroll-behavior: smooth;
           letter-spacing: -0.5px;
-          scroll-padding-top: 100px
+          scroll-padding-top: 100px;
     }`;

@@ -11,26 +11,27 @@ import {} from 'react-router-dom';
 const Navbar = () => {
   const ctx = useContext(MenuContext);
   return (
+    <NavbarContainer>
+      <Logo
+        onClick={() => scroll.scrollToTop()}
+        src="https://res.cloudinary.com/dgyubvlec/image/upload/v1769649699/logo_upage_npsrgm.png"
+      />
 
-    <NavbarContainer >
-    <Logo onClick={() => scroll.scrollToTop()} src='https://res.cloudinary.com/dgyubvlec/image/upload/v1769649699/logo_upage_npsrgm.png'/>
-      
-    <LinkContainer  isOpen={ctx.isMenuOpen}>
-    <LinksItems to="inicio" smooth={true} duration={500} id="inicio">
-        Inicio
-      </LinksItems>
+      <LinkContainer isOpen={ctx.isMenuOpen}>
+        <LinksItems to="inicio" smooth={true} duration={500} id="inicio">
+          Inicio
+        </LinksItems>
 
-       <LinksItems to="servicios" smooth={true} duration={500} id ="servicios">
-        Servicios
-      </LinksItems>
+        <LinksItems to="servicios" smooth={true} duration={500} id="servicios">
+          Servicios
+        </LinksItems>
 
-      <LinksItems to="contact" smooth={true} duration={500} id="contact">
-        Contacto
-      </LinksItems>
-      
-    </LinkContainer>
-    <MenuToggle />
-  </NavbarContainer>
+        <LinksItems to="contact" smooth={true} duration={500} id="contact">
+          Contacto
+        </LinksItems>
+      </LinkContainer>
+      <MenuToggle />
+    </NavbarContainer>
   );
 };
 
