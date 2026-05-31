@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { mobile } from '../../queries/mediaQueries';
+import { Link } from 'react-scroll';
 
 export const HomeContainer = styled.div`
   display: flex;
@@ -54,7 +55,7 @@ export const ParagraphAboutMe = styled.p`
   }
 `;
 
-export const BtnDown = styled.a`
+export const BtnDown = styled(Link)`
   padding: 18px 40px;
   width: 200px;
   border-radius: 999px;
@@ -63,6 +64,8 @@ export const BtnDown = styled.a`
   margin: 0 auto;
   border: 3px solid #2a3d74;
   font-family: 'Inter', sans-serif;
+  cursor: pointer;
+
   &:hover {
     background: #2a3d74;
     color: white;

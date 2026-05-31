@@ -17,13 +17,13 @@ import 'swiper/css/autoplay';
 
 const Projects = () => {
   const data = Proyectos;
-
-  return (
-    <SecondContainer id="proyectos">
+    return (
+    <SecondContainer id='servicios' >
       <Title2>Servicios</Title2>
       <Subtitle>
         Una selección de trabajos donde el diseño y la tecnología se encuentran.
-        Transformamos ideas en experiencias digitales que se sientan <SubtitleEspecial>simples, modernas y atractivas.</SubtitleEspecial>
+        Transformamos ideas en experiencias digitales que se sientan{' '}
+        <SubtitleEspecial>simples, modernas y atractivas.</SubtitleEspecial>
       </Subtitle>
       <CardContainer>
         <Swiper
@@ -54,7 +54,7 @@ const Projects = () => {
         </Swiper>
       </CardContainer>
     </SecondContainer>
-  );
+    );
 };
 
 export default Projects;

@@ -35,9 +35,5 @@ export const LinkItemStyled = styled(ScrollLink)`
   ${mobile} {
     font-size: 18px;
     font-weight:500;
-
-
-
-    
   }
 `;

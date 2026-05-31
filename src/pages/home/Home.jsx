@@ -20,11 +20,12 @@ import Projects from '../projects/Projects';
 import Contact from '../contact/Contact';
 import Footer from '../footer/Footer';
 import TypeWriter from 'typewriter-effect';
+import { Link } from 'react-scroll';
 
 const Home = () => {
   return (
     <>
-      <HomeContainer id="Inicio">
+      <HomeContainer id="inicio">
         <Container>
           <Name>
             Desarrollo páginas web modernas que convierten visitantes en
@@ -35,13 +36,14 @@ const Home = () => {
             clientes encuentren exactamente lo que buscan, sin vueltas.
           </ParagraphAboutMe>
           <ContainerRow>
-            <BtnDown href="#proyectos" alt="Servicios">
+            <BtnDown to="servicios" smooth={true} duration={500} id="servicios">
               Servicios
             </BtnDown>
             <BtnDownContacto
               href="https://wa.me/5491162182330?text=Hola%20UPage!%20Quiero%20más%20info"
               alt="Chatear con UPage!"
-              target="_blank">
+              target="_blank"
+            >
               Contáctanos
             </BtnDownContacto>
           </ContainerRow>

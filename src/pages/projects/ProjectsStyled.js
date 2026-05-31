@@ -11,7 +11,6 @@ export const SecondContainer = styled.div`
   background-size: auto;
   background-position: center;
   ${mobile} {
-    background-color: green;
     gap: 15px;
   }
 `;
@@ -70,8 +69,10 @@ export const Paragraph = styled.p`
   width: 550px;
   ${mobile} {
     font-size: 14px;
-    text-align: justify;
     max-width: 320px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
   }
 `;
 

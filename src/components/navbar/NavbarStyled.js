@@ -36,6 +36,7 @@ export const LinkContainer = styled.div`
 
   ${mobile} {
     flex-direction: column;
+
     background-image: url('/src/assets/noisy-texture-200x200-o10-d13-c-f3eee7-t0.png');
     background-position: center;
     background-size: contain;
@@ -45,9 +46,24 @@ export const LinkContainer = styled.div`
     top: 79px;
     right: 0;
     z-index: 9999;
-    transition: all 1s ease-out;
-    transform: ${(props) =>
-      props.isOpen ? 'translateY(0%)' : 'translateY(-200%)'};
-    height: 350px;
+    overflow: hidden;
+    height: ${(props) => (props.isOpen ? '350px' : '0')};
+    transition: height 0.5 ease;
+    opacity: ${(props) => (props.isOpen ? '1' : '0')};
+    transition:
+      height 0.5s ease-in-out,
+      opacity 0.5s ease;
   }
+`;
+
+export const BlurOverlay = styled.div`
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 80px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 9998;
 `;

@@ -16,30 +16,27 @@ export const Proyectos = [
     title: 'Tienda Digital Clear View Co App',
 
     deploy: 'https://clearviewco.vercel.app/',
-    tech: 'Un sitio diseñado para que la experiencia de compra sea tan clara como la visión que ofrece la marca. Enfocado en la venta de lentes de sol y de vista, cuenta con una navegación intuitiva que permite explorar catálogos segmentados por estilo, como retro, urbanos o clásicos. Incluye un flujo de compra optimizado con carrito integrado, secciones de productos destacados y un sistema de suscripción a novedades para fidelizar clientes.',
-
+    tech: 'Tienda online moderna para marcas de óptica y accesorios'
   },
   {
     id: 3,
     img: 'https://res.cloudinary.com/dgyubvlec/image/upload/v1701372707/C_offee_xdacaq.png',
     title: "C'offee  App",
-    tech: 'Más que una tienda online, es una experiencia para los amantes del café. Este proyecto combina un catálogo de productos premium —con filtros por origen y peso— y un carrito de compras funcional, con una sección de blog interactiva. El diseño busca transmitir calidez y sofisticación, ofreciendo contenido de valor sobre el uso de cafeteras y tips de reciclaje para conectar con la comunidad.',
+    tech: 'E-commerce diseñado para la venta de café y productos gourmet.'
   },
   {
     id: 4,
     img: 'https://res.cloudinary.com/dgyubvlec/image/upload/v1701374407/pfb_ojkajt.png',
     title: 'Picture For Buy App',
     deploy: 'https://pfb-proyecto.vercel.app/',
-    tech: 'Una plataforma minimalista dedicada a la comercialización de cuadros modernos y reproducciones famosas. El foco principal está en la visualización del producto: una interfaz limpia que resalta las obras de arte (abstractas, paisajes y óleos). Cuenta con un sistema de gestión de carrito sencillo y directo, pensado para que el usuario concrete su compra sin distracciones.',
-
+    tech: 'Plataforma digital para exhibición y venta de obras de arte.'
   },
   {
     id: 5,
     img: 'https://res.cloudinary.com/dgyubvlec/image/upload/v1701375018/campingsouth_o3tk7p.png',
     title: 'Camping South App',
     deploy: 'https://camping-south.vercel.app/',
-    tech: 'Un sitio institucional diseñado para capturar la esencia de la naturaleza en Bariloche. La página organiza de forma atractiva toda la información de servicios, actividades como kayak y trekking, y opciones de alojamiento exclusivas. Incluye mapas de ubicación interactivos y un formulario de contacto directo, facilitando la conversión de visitantes en huéspedes de manera rápida y efectiva.',
-
+    tech: 'Página web para complejo turístico con información, contacto y ubicación.'
   },
 ];
 
