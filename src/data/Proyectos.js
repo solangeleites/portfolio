@@ -12,31 +12,34 @@ export const Proyectos = [
   // },
   {
     id: 2,
-    img: 'https://res.cloudinary.com/dgyubvlec/image/upload/v1701370987/ClearViewCo_e2xoc5.png',
-    title: 'Tienda Digital Clear View Co App',
-
+    img: 'https://res.cloudinary.com/dgyubvlec/image/upload/v1780278513/ClearViewCo_e2xoc5_lk5fzw.png',
+    title: 'Clear View Co',
+    type: 'E-commerce',
     deploy: 'https://clearviewco.vercel.app/',
-    tech: 'Tienda online moderna para marcas de óptica y accesorios'
+    tech: 'Ideal para negocios que quieren vender sus productos por internet sin depender de Mercado Libre o Instagram. Incluye catálogo de productos, carrito de compras, pasarela de pago, formulario de contacto y newsletter. Puede tener de 5 a 8 secciones y se ve perfecta en celular, tablet y computadora.',
   },
   {
     id: 3,
-    img: 'https://res.cloudinary.com/dgyubvlec/image/upload/v1701372707/C_offee_xdacaq.png',
-    title: "C'offee  App",
-    tech: 'E-commerce diseñado para la venta de café y productos gourmet.'
+    img: 'https://res.cloudinary.com/dgyubvlec/image/upload/v1780278513/C_offee_xdacaq_alu8mz.png',
+    title: "C'offee",
+    type: 'E-commerce',
+    tech: 'Ideal para cafeterías, productores de alimentos y marcas gourmet que quieren vender online. Incluye catálogo de productos, carrito de compras, pasarela de pago y blog opcional. Puede tener de 5 a 8 secciones y se ve perfecta en celular, tablet y computadora.',
   },
   {
     id: 4,
-    img: 'https://res.cloudinary.com/dgyubvlec/image/upload/v1701374407/pfb_ojkajt.png',
-    title: 'Picture For Buy App',
+    img: 'https://res.cloudinary.com/dgyubvlec/image/upload/v1780278513/pfb_ojkajt_nszn8a.png',
+    title: 'Picture For Buy',
+    type: 'E-commerce',
     deploy: 'https://pfb-proyecto.vercel.app/',
-    tech: 'Plataforma digital para exhibición y venta de obras de arte.'
+    tech: 'Ideal para artistas, fotógrafos e ilustradores que quieren vender su trabajo sin intermediarios. Incluye galería de obras, carrito de compras, pasarela de pago y perfil del artista. Puede tener de 4 a 6 secciones y se ve perfecta en celular, tablet y computadora.',
   },
   {
     id: 5,
-    img: 'https://res.cloudinary.com/dgyubvlec/image/upload/v1701375018/campingsouth_o3tk7p.png',
-    title: 'Camping South App',
+    img: 'https://res.cloudinary.com/dgyubvlec/image/upload/v1780278513/campingsouth_o3tk7p_q6ueys.png',
+    title: 'Camping South',
+    type: 'Institucional + Turismo',
     deploy: 'https://camping-south.vercel.app/',
-    tech: 'Página web para complejo turístico con información, contacto y ubicación.'
+    tech: 'Ideal para campings, hosterías, restaurantes y negocios turísticos que quieren aparecer en Google y recibir consultas. Incluye página de inicio, galería de fotos, servicios y actividades, mapa de ubicación y formulario de contacto. Puede tener de 4 a 6 secciones y se ve perfecta en celular, tablet y computadora.',
   },
 ];
 

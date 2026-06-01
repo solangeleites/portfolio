@@ -60,7 +60,7 @@ export const ParagraphAboutMe = styled.p`
 export const BtnDown = styled(Link)`
   padding: 18px 40px;
   width: 200px;
-  border-radius: 999px;
+  border-radius:10px;
   text-align: center;
   transition: 0.3s ease-in;
   margin: 0 auto;
@@ -78,7 +78,7 @@ export const BtnDown = styled(Link)`
 export const BtnDownContacto = styled.a`
   padding: 18px 40px;
   width: 200px;
-  border-radius: 999px;
+  border-radius: 10px;
   text-align: center;
   transition: 0.3s ease-in;
   margin: 0 auto;
@@ -95,11 +95,11 @@ export const BtnDownContacto = styled.a`
 export const Container = styled.main`
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
   text-align: center;
   width: 700px;
   gap: 25px;
+  width:1300px;
   ${mobile} {
     width: 320px;
     gap: 30px;

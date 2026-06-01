@@ -36,7 +36,7 @@ const Projects = () => {
           loop={true}
           style={{
             width: '100%',
-            maxWidth: '1200px', // Un poco más grande que la card para que las flechas tengan aire
+            maxWidth: '950px', // Un poco más grande que la card para que las flechas tengan aire
             margin: '0 auto',
           }}
           centeredSlides={true}

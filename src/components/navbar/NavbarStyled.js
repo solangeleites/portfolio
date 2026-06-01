@@ -9,7 +9,7 @@ export const NavbarContainer = styled.nav`
   height: 80px;
   width: 100%;
   padding: 0px 92px;
-  background-image: url('/src/assets/noisy-texture-200x200-o10-d13-c-f3eee7-t0.png');
+  background-image: url('https://res.cloudinary.com/dgyubvlec/image/upload/v1779151199/noisy-texture-200x200-o10-d13-c-f3eee7-t0_nnprzd.png');
   background-position: center;
   background-size: contain;
   position: fixed;
@@ -30,11 +30,12 @@ export const Logo = styled.img`
   }
 `;
 export const LinkContainer = styled.div`
-  display: flex;
   align-items: center;
   justify-content: space-evenly;
+  display: none;
 
   ${mobile} {
+      display: flex;
     flex-direction: column;
     background-image: url('https://res.cloudinary.com/dgyubvlec/image/upload/v1779151199/noisy-texture-200x200-o10-d13-c-f3eee7-t0_nnprzd.png');
     background-position: center;

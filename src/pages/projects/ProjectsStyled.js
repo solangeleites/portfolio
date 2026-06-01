@@ -10,6 +10,7 @@ export const SecondContainer = styled.div`
   background-image: url('https://res.cloudinary.com/dgyubvlec/image/upload/v1779151199/noisy-texture-200x200-o10-d13-c-f3eee7-t0_nnprzd.png');
   background-size: auto;
   background-position: center;
+  gap: 20px;
   ${mobile} {
     gap: 15px;
   }
@@ -66,7 +67,8 @@ export const SubtitleEspecial = styled.p`
 
 export const Paragraph = styled.p`
   color: white;
-  width: 550px;
+  width: 500px;
+  font-family: 'Inter', sans-serif;
   ${mobile} {
     font-size: 14px;
     max-width: 320px;
@@ -79,7 +81,6 @@ export const Paragraph = styled.p`
 export const ContainerButtons = styled.div`
   display: flex;
   gap: 25px;
-  border: 2px solid orange;
   ${mobile} {
     justify-content: space-evenly;
   }
@@ -102,9 +103,8 @@ export const Button = styled.button`
 `;
 
 export const CardContainer = styled.div`
-  width: 100%;
-  padding: 40px 0;
   overflow: hidden;
+  margin: 0px;
 
   ${mobile} {
     padding: 0px;
@@ -114,11 +114,8 @@ export const CardContainer2 = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
-  gap: 12px;
-  flex: 1;
-  padding: 20px;
-
+  align-items: center;
+  gap: 20px;
   ${mobile} {
     align-items: center;
     padding: 10px;
@@ -126,20 +123,17 @@ export const CardContainer2 = styled.div`
 `;
 export const Card = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  width: 100%;
-  max-width: 1100px;
-  min-height: 450px;
-  padding: 24px;
+  width: 950px;
+  height: 350px;
   box-sizing: border-box;
-  background: #2a3d74;
+  background: #2a3d75;
   color: white;
-  border-radius: 999px;
-  padding: 18px 36px;
+  border-radius: 20px;
   font-weight: 500;
   transition: 0.3s ease-in;
-
+  margin: 0;
   ${mobile} {
     flex-direction: column;
     max-width: 350px;
@@ -149,9 +143,8 @@ export const Card = styled.div`
 `;
 
 export const ImageCard = styled.img`
-  height: 400px;
-  border-radius: 999px;
-
+  height: 250px;
+  border-radius: 20px;
   ${mobile} {
     height: 280px;
     border-radius: 50px;
@@ -160,8 +153,7 @@ export const ImageCard = styled.img`
 
 export const ContainerButtonDeployAndGithub = styled.div`
   display: flex;
-  justify-content: space-between;
-  gap: 50px;
+  gap: 75px;
   ${mobile} {
     gap: 15px;
     text-align: center;
@@ -177,6 +169,5 @@ export const ContainerRolAndDuration = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    background-color: green;
   }
 `;

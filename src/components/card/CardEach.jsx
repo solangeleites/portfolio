@@ -11,17 +11,7 @@ import {
 } from '../../pages/projects/ProjectsStyled';
 import Deploy from '../UI/deploy/Deploy';
 
-const CardEach = ({
-  id,
-  img,
-  title,
-  github,
-  deploy,
-  tech,
-  paragraph,
-  rol,
-  duration,
-}) => {
+const CardEach = ({ id, img, title, deploy, type, tech }) => {
   return (
     <Card>
       <ImageCard src={img} alt={title} />
@@ -30,7 +20,7 @@ const CardEach = ({
           <Title>{title}</Title>
           <Deploy href={deploy} />
         </ContainerButtonDeployAndGithub>
-        <Paragraph>{paragraph}</Paragraph>
+        <Paragraph>{type}</Paragraph>
         <Paragraph>{tech}</Paragraph>
       </CardContainer2>
     </Card>
