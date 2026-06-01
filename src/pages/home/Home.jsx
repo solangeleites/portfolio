@@ -25,7 +25,7 @@ import { Link } from 'react-scroll';
 const Home = () => {
   return (
     <>
-      <HomeContainer id="inicio">
+      <HomeContainer id="inicio" >
         <Container>
           <Name>
             Desarrollo páginas web modernas que convierten visitantes en
@@ -36,7 +36,7 @@ const Home = () => {
             clientes encuentren exactamente lo que buscan, sin vueltas.
           </ParagraphAboutMe>
           <ContainerRow>
-            <BtnDown to="servicios" smooth={true} duration={500} id="servicios">
+            <BtnDown to="servicios" smooth={true} duration={500} offset={-80}>
               Servicios
             </BtnDown>
             <BtnDownContacto

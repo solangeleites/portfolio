@@ -45,7 +45,7 @@ export const LinkContainer = styled.div`
     width: 100%;
     top: 79px;
     right: 0;
-    z-index: 9999;
+    z-index: 200;
     overflow: hidden;
     height: ${(props) => (props.isOpen ? '350px' : '0')};
     transition: height 0.5 ease;
@@ -65,5 +65,5 @@ export const BlurOverlay = styled.div`
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   background: rgba(0, 0, 0, 0.1);
-  z-index: 9998;
+  z-index: 100;
 `;

@@ -20,15 +20,15 @@ const Navbar = () => {
       />
 
       <LinkContainer isOpen={ctx.isMenuOpen}   onClick={ctx.toggleMenu}>
-        <LinksItems to="inicio" smooth={true} duration={500} id="inicio">
+        <LinksItems to="inicio" smooth={true} duration={500} id="inicio"offset={-80}>
           Inicio
         </LinksItems>
 
-        <LinksItems to="servicios" smooth={true} duration={500} id="servicios">
+        <LinksItems to="servicios" smooth={true} duration={500} id="servicios"offset={-80}>
           Servicios
         </LinksItems>
 
-        <LinksItems to="contacto" smooth={true} duration={500} id="contacto">
+        <LinksItems to="contacto" smooth={true} duration={500} id="contacto"offset={-80}>
           Contacto
         </LinksItems>
       </LinkContainer>

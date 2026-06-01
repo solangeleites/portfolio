@@ -27,7 +27,7 @@ const Projects = () => {
       </Subtitle>
       <CardContainer>
         <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
+          modules={[Navigation, Autoplay]}
           speed={1000}
           autoplay={{ delay: 3500 }} // Cambia cada 3 segundos
           spaceBetween={25} // Espacio entre cards
@@ -39,11 +39,6 @@ const Projects = () => {
             margin: '0 auto',
           }}
           centeredSlides={true}
-          /*           breakpoints={{
-            Cuando la pantalla es grande, mostramos más
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }} */
         >
           {data &&
             data.map((proyecto) => (
