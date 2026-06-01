@@ -14,7 +14,6 @@ export const HomeContainer = styled.div`
   background-image: url('/src/assets/noisy-texture-200x200-o10-d13-c-f3eee7-t0.png');
   background-size: auto;
   background-position: center;
-  border: 5px solid crimson;
 `;
 export const ContainerRow = styled.div`
   display: flex;
