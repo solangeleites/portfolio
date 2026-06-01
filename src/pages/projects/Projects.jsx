@@ -33,6 +33,7 @@ const Projects = () => {
           spaceBetween={25} // Espacio entre cards
           slidesPerView={1} // Cuántas se ven a la vez
           pagination={{ clickable: true }}
+          loop={true}
           style={{
             width: '100%',
             maxWidth: '1200px', // Un poco más grande que la card para que las flechas tengan aire
