@@ -8,8 +8,6 @@ export const HomeContainer = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100dvh;
-
-  padding-top: 80px;
   box-sizing: border-box;
   background-image: url('/src/assets/noisy-texture-200x200-o10-d13-c-f3eee7-t0.png');
   background-size: auto;
