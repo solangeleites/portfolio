@@ -126,7 +126,7 @@ export const Card = styled.div`
   justify-content: space-evenly;
   align-items: center;
   width: 950px;
-  height: 350px;
+  height: 450px;
   box-sizing: border-box;
   background: #2a3d75;
   color: white;
@@ -138,7 +138,7 @@ export const Card = styled.div`
     flex-direction: column;
     max-width: 350px;
     margin: 0 auto;
-    border-radius: 50px;
+    border-radius: 20px;
   }
 `;
 
@@ -146,8 +146,8 @@ export const ImageCard = styled.img`
   height: 250px;
   border-radius: 20px;
   ${mobile} {
-    height: 280px;
-    border-radius: 50px;
+    height: 180px;
+    border-radius: 20px;
   }
 `;
 

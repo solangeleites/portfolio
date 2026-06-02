@@ -25,7 +25,7 @@ import { Link } from 'react-scroll';
 const Home = () => {
   return (
     <>
-      <HomeContainer id="inicio" >
+      <HomeContainer id="inicio">
         <Container>
           <Name>
             Desarrollo páginas web modernas que convierten visitantes en

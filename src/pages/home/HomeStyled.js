@@ -1,6 +1,7 @@
-import styled from 'styled-components';
 import { mobile } from '../../queries/mediaQueries';
 import { Link } from 'react-scroll';
+import styled, { keyframes } from 'styled-components';
+
 
 export const HomeContainer = styled.div`
   display: flex;
@@ -151,5 +152,55 @@ export const Button = styled.button`
     list-style: none;
     background-color: var(--oliva);
     color: var(--beige);
+  }
+`;
+
+//----------------------------------------------------------------------------------------
+
+
+const move = keyframes`
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(40px, -20px) scale(1.1);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+`;
+
+export const GradientBackground = styled.div`
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  background: #fefadf;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.8;
+    animation: ${move} 12s ease-in-out infinite;
+  }
+
+  &::before {
+    width: 600px;
+    height: 600px;
+    background: #2a3d75;
+    top: -150px;
+    left: -150px;
+  }
+
+  &::after {
+    width: 700px;
+    height: 700px;
+    background: #1b2750;
+    bottom: -200px;
+    right: -200px;
+    animation-delay: -6s;
   }
 `;
