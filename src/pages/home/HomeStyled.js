@@ -2,7 +2,6 @@ import { mobile } from '../../queries/mediaQueries';
 import { Link } from 'react-scroll';
 import styled, { keyframes } from 'styled-components';
 
-
 export const HomeContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -13,7 +12,6 @@ export const HomeContainer = styled.div`
   background-position: center;
   background-image: url('https://res.cloudinary.com/dgyubvlec/image/upload/v1779151199/noisy-texture-200x200-o10-d13-c-f3eee7-t0_nnprzd.png');
   z-index: 300;
-
 `;
 export const ContainerRow = styled.div`
   display: flex;
@@ -61,7 +59,7 @@ export const ParagraphAboutMe = styled.p`
 export const BtnDown = styled(Link)`
   padding: 18px 40px;
   width: 200px;
-  border-radius:10px;
+  border-radius: 10px;
   text-align: center;
   transition: 0.3s ease-in;
   margin: 0 auto;
@@ -100,7 +98,7 @@ export const Container = styled.main`
   text-align: center;
   width: 700px;
   gap: 25px;
-  width:1300px;
+  width: 1300px;
   ${mobile} {
     width: 320px;
     gap: 30px;
@@ -156,7 +154,6 @@ export const Button = styled.button`
 `;
 
 //----------------------------------------------------------------------------------------
-
 
 const move = keyframes`
   0% {

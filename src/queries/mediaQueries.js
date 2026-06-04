@@ -1,7 +1,7 @@
 const wideScreen = 1800;
 const desktopWidth = 1024;
 const tabletWidth = 992;
-const mobileWidth = 576;
+const mobileWidth = 992;
 
 
 export const widescreen = `@media (max-width: ${wideScreen}px)`;

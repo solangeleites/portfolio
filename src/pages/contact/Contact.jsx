@@ -1,7 +1,6 @@
 import React from 'react';
-import { ContainerRow, Container, Title, Paragraph, Subtitle } from './ContactStyled';
-
-import Form from './form/Form';
+import { ContainerRow, Container, Title, Paragraph } from './ContactStyled';
+import { Subtitle } from '../projects/ProjectsStyled';
 import { Title2, SubtitleEspecial } from '../projects/ProjectsStyled';
 
 

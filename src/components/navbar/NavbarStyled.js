@@ -8,7 +8,7 @@ export const NavbarContainer = styled.nav`
   align-items: center;
   height: 80px;
   width: 100%;
-  padding: 0px 92px;
+  margin-left: 92px;
   background-image: url('https://res.cloudinary.com/dgyubvlec/image/upload/v1779151199/noisy-texture-200x200-o10-d13-c-f3eee7-t0_nnprzd.png');
   background-position: center;
   background-size: contain;
