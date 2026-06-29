@@ -36,6 +36,7 @@ export const Subtitle = styled.p`
 
   ${mobile} {
     font-size: 14px;
+    max-width:350px;
   }
 `;
 export const Paragraph = styled.p`

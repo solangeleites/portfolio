@@ -54,8 +54,9 @@ export const TextArea = styled.textarea`
   font-size: 20px;
   background: none;
   ${mobile} {
-    width: 260px;
+    max-width: 260px;
     font-size: 16px;
+    font-family: 'Inter', sans-serif;
   }
 `;
 
@@ -88,5 +89,5 @@ export const MsgEnviado = styled.p`
   font-family: 'Inter', sans-serif;
   background-color: #2a3d75;
   color: white;
-  border-radius:20px;
+  border-radius: 20px;
 `;

@@ -5,6 +5,7 @@ import {
   CardContainer,
   Title2,
   SubtitleEspecial,
+  SwiperStyled,
 } from './ProjectsStyled';
 import CardEach from '../../components/card/CardEach';
 import { Proyectos } from '../../data/Proyectos';
@@ -17,8 +18,8 @@ import 'swiper/css/autoplay';
 
 const Projects = () => {
   const data = Proyectos;
-    return (
-    <SecondContainer id='servicios' >
+  return (
+    <SecondContainer id="servicios">
       <Title2>Servicios</Title2>
       <Subtitle>
         Una selección de trabajos donde el diseño y la tecnología se encuentran.
@@ -26,7 +27,7 @@ const Projects = () => {
         <SubtitleEspecial>simples, modernas y atractivas.</SubtitleEspecial>
       </Subtitle>
       <CardContainer>
-        <Swiper
+        <SwiperStyled
           modules={[Navigation, Autoplay]}
           speed={1000}
           autoplay={{ delay: 3500 }} // Cambia cada 3 segundos
@@ -34,11 +35,6 @@ const Projects = () => {
           slidesPerView={1} // Cuántas se ven a la vez
           pagination={{ clickable: true }}
           loop={true}
-          style={{
-            width: '100%',
-            maxWidth: '950px', // Un poco más grande que la card para que las flechas tengan aire
-            margin: '0 auto',
-          }}
           centeredSlides={true}
         >
           {data &&
@@ -47,10 +43,10 @@ const Projects = () => {
                 <CardEach {...proyecto} />
               </SwiperSlide>
             ))}
-        </Swiper>
+        </SwiperStyled>
       </CardContainer>
     </SecondContainer>
-    );
+  );
 };
 
 export default Projects;

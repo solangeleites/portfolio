@@ -16,7 +16,7 @@ const Navbar = () => {
       {ctx.isMenuOpen && <BlurOverlay />}
       <Logo
         onClick={() => scroll.scrollToTop()}
-        src="https://res.cloudinary.com/dgyubvlec/image/upload/v1769649699/logo_upage_npsrgm.png"
+        src="https://res.cloudinary.com/dgyubvlec/image/upload/v1782607838/ChatGPT_Image_25_jun_2026_10_06_50_p.m_apbgqt.png"
       />
 
       <LinkContainer isOpen={ctx.isMenuOpen}   onClick={ctx.toggleMenu}>

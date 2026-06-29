@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { mobile } from '../../queries/mediaQueries';
-
+import { Swiper } from 'swiper/react';
 export const SecondContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -13,6 +13,16 @@ export const SecondContainer = styled.div`
   gap: 20px;
   ${mobile} {
     gap: 15px;
+  }
+`;
+
+export const SwiperStyled = styled(Swiper)`
+  width: 100%;
+  max-width: 950px;
+  margin: 0;
+
+  ${mobile} {
+    max-width: 350px;
   }
 `;
 
@@ -108,6 +118,7 @@ export const CardContainer = styled.div`
 
   ${mobile} {
     padding: 0px;
+    overflow: hidden;
   }
 `;
 export const CardContainer2 = styled.div`
@@ -135,10 +146,15 @@ export const Card = styled.div`
   transition: 0.3s ease-in;
   margin: 0;
   ${mobile} {
-    flex-direction: column;
     max-width: 350px;
     margin: 0 auto;
     border-radius: 20px;
+
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    min-height: auto;
+    padding: 20px;
   }
 `;
 

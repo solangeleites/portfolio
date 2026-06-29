@@ -7,16 +7,14 @@ export const NavbarContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  width: 100%;
-  margin-left: 92px;
-  background-image: url('https://res.cloudinary.com/dgyubvlec/image/upload/v1779151199/noisy-texture-200x200-o10-d13-c-f3eee7-t0_nnprzd.png');
-  background-position: center;
-  background-size: contain;
   position: fixed;
   top: 0px;
   z-index: 999;
+  margin: 15px 50px;
   ${mobile} {
-    padding: 0px;
+    margin: 0;
+    width: 100%;
+    background: url('https://res.cloudinary.com/dgyubvlec/image/upload/v1779151199/noisy-texture-200x200-o10-d13-c-f3eee7-t0_nnprzd.png');
   }
 `;
 
@@ -35,7 +33,7 @@ export const LinkContainer = styled.div`
   display: none;
 
   ${mobile} {
-      display: flex;
+    display: flex;
     flex-direction: column;
     background-image: url('https://res.cloudinary.com/dgyubvlec/image/upload/v1779151199/noisy-texture-200x200-o10-d13-c-f3eee7-t0_nnprzd.png');
     background-position: center;
