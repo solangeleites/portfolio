@@ -8,9 +8,10 @@ export const NavbarContainer = styled.nav`
   align-items: center;
   height: 80px;
   position: fixed;
+  width: 100%;
   top: 0px;
   z-index: 999;
-  margin: 15px 50px;
+  background: url('https://res.cloudinary.com/dgyubvlec/image/upload/v1779151199/noisy-texture-200x200-o10-d13-c-f3eee7-t0_nnprzd.png');
   ${mobile} {
     margin: 0;
     width: 100%;
@@ -22,6 +23,7 @@ export const Logo = styled.img`
   cursor: pointer;
   height: 80px;
   padding-top: 10px;
+  margin-left: 25px;
   ${mobile} {
     font-size: 18px;
     margin-left: 25px;
